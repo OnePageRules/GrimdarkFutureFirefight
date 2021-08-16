@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3442-f45c-5470-b87c" name="Havoc Brothers" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="4503-fc13-8f5b-fe41" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3442-f45c-5470-b87c" name="Havoc Brothers" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="4503-fc13-8f5b-fe41" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="4283-d3f2-48c6-7a58" name="Havoc Lord" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -1804,18 +1804,23 @@
                 <cost name="pts" typeId="1549-06c1-4685-757e" value="20.0"/>
               </costs>
             </entryLink>
+            <entryLink id="ee66-d7eb-3581-4995" name="Plasma rifle" hidden="false" collective="false" import="true" targetId="ece7-a511-cf74-3fe3" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="5.0"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="7be3-6b7e-e829-0005" name="Replace CCW:" hidden="false" collective="false" import="true" defaultSelectionEntryId="e7af-d373-7f9f-d60f">
+        <selectionEntryGroup id="7be3-6b7e-e829-0005" name="Replace CCW:" hidden="false" collective="false" import="true" defaultSelectionEntryId="05d3-8079-2dea-99e9">
           <modifiers>
             <modifier type="set" field="464e-b0ec-eb88-f9f6" value="0.0">
               <conditions>
-                <condition field="selections" scope="6013-103e-0b0f-6df4" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ed0-7a85-4fa0-2c96" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d1aa-8fc7-27b1-7138" type="greaterThan"/>
               </conditions>
             </modifier>
             <modifier type="set" field="5f4d-fcca-cbd9-f78e" value="0.0">
               <conditions>
-                <condition field="selections" scope="6013-103e-0b0f-6df4" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ed0-7a85-4fa0-2c96" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d1aa-8fc7-27b1-7138" type="greaterThan"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1824,23 +1829,24 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f4d-fcca-cbd9-f78e" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="e7af-d373-7f9f-d60f" name="CCW" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="05d3-8079-2dea-99e9" name="CCW" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
-                <infoLink id="29eb-d02c-4e51-2c76" name="CCW (A1)" hidden="false" targetId="115e-1a47-a7d9-4167" type="profile">
+                <infoLink id="a884-4223-3240-3650" name="CCW (A1)" hidden="false" targetId="115e-1a47-a7d9-4167" type="profile">
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
                       <conditionGroups>
-                        <conditionGroup type="and">
+                        <conditionGroup type="or">
                           <conditions>
-                            <condition field="selections" scope="6013-103e-0b0f-6df4" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="84b1-9393-854f-41aa" type="equalTo"/>
-                            <condition field="selections" scope="6013-103e-0b0f-6df4" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f8a7-a1e9-750d-a2f4" type="equalTo"/>
+                            <condition field="selections" scope="6013-103e-0b0f-6df4" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="84b1-9393-854f-41aa" type="notEqualTo"/>
+                            <condition field="selections" scope="6013-103e-0b0f-6df4" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f8a7-a1e9-750d-a2f4" type="notEqualTo"/>
+                            <condition field="selections" scope="6013-103e-0b0f-6df4" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8a25-9b01-4195-eb5d" type="notEqualTo"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
                     </modifier>
                   </modifiers>
                 </infoLink>
-                <infoLink id="155b-b977-7452-bc26" name="CCW (A2)" hidden="false" targetId="61ce-3fa4-ffb1-5f1b" type="profile">
+                <infoLink id="aa34-c686-ffe2-de50" name="CCW (A2)" hidden="false" targetId="61ce-3fa4-ffb1-5f1b" type="profile">
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
                       <conditionGroups>
@@ -1848,6 +1854,7 @@
                           <conditions>
                             <condition field="selections" scope="6013-103e-0b0f-6df4" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="84b1-9393-854f-41aa" type="equalTo"/>
                             <condition field="selections" scope="6013-103e-0b0f-6df4" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f8a7-a1e9-750d-a2f4" type="equalTo"/>
+                            <condition field="selections" scope="6013-103e-0b0f-6df4" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8a25-9b01-4195-eb5d" type="equalTo"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -1874,6 +1881,18 @@
             <entryLink id="398c-6f2d-9b85-aba3" name="Energy sword" hidden="false" collective="false" import="true" targetId="8106-193b-80f4-7d85" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="1549-06c1-4685-757e" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="e7e0-07f0-9350-544e" name="Upgrade with:" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="f0e0-bdfe-77e1-443d" name="Twin assault rifle" hidden="false" collective="false" import="true" targetId="8a25-9b01-4195-eb5d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0118-126c-c772-3417" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="10.0"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -3357,8 +3376,14 @@
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
@@ -3482,6 +3507,9 @@
                   </modifiers>
                 </infoLink>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
@@ -3566,6 +3594,9 @@
             <infoLink id="1615-2436-a390-2208" name="AP(X)" hidden="false" targetId="ea55-cc1c-f48e-89da" type="rule"/>
             <infoLink id="9dee-acde-1fa1-1a2c" name="Poison" hidden="false" targetId="a7c5-0443-a3b4-79bf" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="be03-bf37-60d2-a7d1" name="Ring the Bell" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -3640,6 +3671,9 @@
           <infoLinks>
             <infoLink id="2da9-36fa-6444-7960" name="AP(X)" hidden="false" targetId="ea55-cc1c-f48e-89da" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="94c0-c672-213c-e2a1" name="CCW" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -3649,6 +3683,9 @@
           <infoLinks>
             <infoLink id="f9ea-26c7-4f9a-35e6" name="CCW (A1)" hidden="false" targetId="115e-1a47-a7d9-4167" type="profile"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -3695,8 +3732,14 @@
               <infoLinks>
                 <infoLink id="d8e8-d885-ca78-6a68" name="Claws (A2)" hidden="false" targetId="256b-a7d3-8373-a73b" type="profile"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -3742,8 +3785,14 @@
               <infoLinks>
                 <infoLink id="6183-8ce0-7591-6f82" name="Claws (A2)" hidden="false" targetId="256b-a7d3-8373-a73b" type="profile"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -3797,8 +3846,14 @@
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
@@ -3935,6 +3990,9 @@
                   </modifiers>
                 </infoLink>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
@@ -4085,6 +4143,9 @@
           <infoLinks>
             <infoLink id="1532-9f3f-bad4-679f" name="Poison" hidden="false" targetId="a7c5-0443-a3b4-79bf" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -4271,6 +4332,9 @@
           <infoLinks>
             <infoLink id="666f-da36-ae59-25bc" name="CCW (A1)" hidden="false" targetId="115e-1a47-a7d9-4167" type="profile"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -4367,6 +4431,9 @@
           <infoLinks>
             <infoLink id="73d6-b925-7597-14bc" name="CCW (A2)" hidden="false" targetId="61ce-3fa4-ffb1-5f1b" type="profile"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -4416,6 +4483,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="58c5-93d8-f379-5c38" name="CCW" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -4425,6 +4495,9 @@
           <infoLinks>
             <infoLink id="d356-6825-3d72-e856" name="CCW (A1)" hidden="false" targetId="115e-1a47-a7d9-4167" type="profile"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -4978,6 +5051,9 @@
         <infoLink id="a127-fd4f-ad81-f34e" name="AP(X)" hidden="false" targetId="ea55-cc1c-f48e-89da" type="rule"/>
         <infoLink id="e538-f95d-54a2-de7d" name="Poison" hidden="false" targetId="a7c5-0443-a3b4-79bf" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="45eb-8cd5-728a-6ae8" name="Plague cleaver" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -4994,6 +5070,9 @@
         <infoLink id="f604-37d3-3aeb-b4e4" name="AP(X)" hidden="false" targetId="ea55-cc1c-f48e-89da" type="rule"/>
         <infoLink id="13b1-c77a-82f2-344f" name="Poison" hidden="false" targetId="a7c5-0443-a3b4-79bf" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="bc1a-f97a-7cad-0ef1" name="Plague mace" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -5010,6 +5089,9 @@
         <infoLink id="b987-91a1-f491-9e56" name="AP(X)" hidden="false" targetId="ea55-cc1c-f48e-89da" type="rule"/>
         <infoLink id="3321-86b9-2228-d258" name="Poison" hidden="false" targetId="a7c5-0443-a3b4-79bf" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="5354-fcd6-fcb0-acdb" name="Heavy plague flail" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -5026,6 +5108,9 @@
         <infoLink id="3b96-a975-4ac5-e083" name="AP(X)" hidden="false" targetId="ea55-cc1c-f48e-89da" type="rule"/>
         <infoLink id="3de6-7586-be2f-52f0" name="Poison" hidden="false" targetId="a7c5-0443-a3b4-79bf" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="6776-a1e9-5547-74a8" name="Plague flail" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -5042,6 +5127,9 @@
         <infoLink id="0863-0d68-ae8a-e679" name="AP(X)" hidden="false" targetId="ea55-cc1c-f48e-89da" type="rule"/>
         <infoLink id="76b4-bb1e-b405-d702" name="Poison" hidden="false" targetId="a7c5-0443-a3b4-79bf" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="d802-5e50-34f8-509d" name="Upgrade with Regeneration" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
@@ -5075,6 +5163,9 @@
       <infoLinks>
         <infoLink id="65b4-2188-63a9-54bd" name="Poison" hidden="false" targetId="a7c5-0443-a3b4-79bf" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="5dec-1a62-ea66-d98a" name="Plague launcher" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -5091,6 +5182,9 @@
         <infoLink id="8120-99a6-56cd-2257" name="AP(X)" hidden="false" targetId="ea55-cc1c-f48e-89da" type="rule"/>
         <infoLink id="232c-ea50-6cf0-b86d" name="Poison" hidden="false" targetId="a7c5-0443-a3b4-79bf" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="a006-14a9-529f-08fa" name="Reaper scythe" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -5112,6 +5206,9 @@
         <infoLink id="13ba-8520-2d77-1108" name="AP(X)" hidden="false" targetId="ea55-cc1c-f48e-89da" type="rule"/>
         <infoLink id="2d9d-497a-9f1d-42c1" name="Deadly(X)" hidden="false" targetId="7cc5-4f66-8ace-337c" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="e744-3489-7496-c1ff" name="Noise rifle" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
