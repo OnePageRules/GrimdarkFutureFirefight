@@ -79,10 +79,10 @@
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
                       <conditionGroups>
-                        <conditionGroup type="and">
+                        <conditionGroup type="or">
                           <conditions>
-                            <condition field="selections" scope="4283-d3f2-48c6-7a58" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="84b1-9393-854f-41aa" type="equalTo"/>
-                            <condition field="selections" scope="4283-d3f2-48c6-7a58" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f8a7-a1e9-750d-a2f4" type="equalTo"/>
+                            <condition field="selections" scope="4283-d3f2-48c6-7a58" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="84b1-9393-854f-41aa" type="notEqualTo"/>
+                            <condition field="selections" scope="4283-d3f2-48c6-7a58" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f8a7-a1e9-750d-a2f4" type="notEqualTo"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -1186,8 +1186,8 @@
                       <conditionGroups>
                         <conditionGroup type="or">
                           <conditions>
-                            <condition field="selections" scope="f732-188c-0459-90c1" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f8a7-a1e9-750d-a2f4" type="greaterThan"/>
-                            <condition field="selections" scope="f732-188c-0459-90c1" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="84b1-9393-854f-41aa" type="greaterThan"/>
+                            <condition field="selections" scope="f732-188c-0459-90c1" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f8a7-a1e9-750d-a2f4" type="notEqualTo"/>
+                            <condition field="selections" scope="f732-188c-0459-90c1" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="84b1-9393-854f-41aa" type="notEqualTo"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -1363,10 +1363,10 @@
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
                       <conditionGroups>
-                        <conditionGroup type="and">
+                        <conditionGroup type="or">
                           <conditions>
-                            <condition field="selections" scope="5c9a-31c7-3dfa-dedd" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="84b1-9393-854f-41aa" type="equalTo"/>
-                            <condition field="selections" scope="5c9a-31c7-3dfa-dedd" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f8a7-a1e9-750d-a2f4" type="equalTo"/>
+                            <condition field="selections" scope="5c9a-31c7-3dfa-dedd" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="84b1-9393-854f-41aa" type="notEqualTo"/>
+                            <condition field="selections" scope="5c9a-31c7-3dfa-dedd" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f8a7-a1e9-750d-a2f4" type="notEqualTo"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
