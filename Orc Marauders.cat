@@ -336,11 +336,14 @@
         <categoryLink id="0b8a-1edc-f3c6-fdf0" name="New CategoryLink" hidden="false" targetId="e108-7f03-5301-c340" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="6dc5-9a48-731e-b8a3" name="Goblin with alt. pistol" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="6dc5-9a48-731e-b8a3" name="Goblin with alt. pistol" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39ec-c9b0-20ec-4f93" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f490-1362-89dc-3fb0" type="min"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink id="a06b-f4e7-8761-6963" name="Infantry" hidden="false" targetId="e108-7f03-5301-c340" primary="false"/>
+          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="1e91-20f2-bf62-2941" name="CCW" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -357,6 +360,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
@@ -378,6 +384,9 @@
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="4c3a-a12d-6ff5-1c0a" name="Goblin" hidden="false" collective="false" import="true" type="model">
           <constraints>
@@ -412,6 +421,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="e933-691b-f699-ab83" name="Pistol" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
@@ -428,8 +440,27 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f87c-8c1d-cdb4-ba7d" name="Goblin Herder" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7763-16cb-b7c3-69a1" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="f717-811c-2073-9c03" name="Fearless" hidden="false" targetId="3f00-826b-ef11-41e0" type="rule"/>
+            <infoLink id="5076-1627-e2a1-db8d" name="Relentless" hidden="false" targetId="2d4e-ce9c-7486-5e6a" type="rule"/>
+            <infoLink id="a2fb-3a42-7388-8b10" name="Furious" hidden="false" targetId="42f7-62ba-60a0-d911" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="1549-06c1-4685-757e" value="20.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -646,6 +677,25 @@
                 <cost name="pts" typeId="1549-06c1-4685-757e" value="10.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="68a1-ce38-aa82-af06" name="Breach Ram" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="8901-c36d-c047-5cd1" name="Breach Ram" hidden="false" typeId="2c92-291a-eece-3203" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="e3ae-f1ee-0a4c-a9ba">-</characteristic>
+                    <characteristic name="Attacks" typeId="ce99-74fb-fca1-48df">1</characteristic>
+                    <characteristic name="AP" typeId="0b3e-ea4d-51df-81f1">3</characteristic>
+                    <characteristic name="Special Rules" typeId="6636-8baa-4920-3db5">Deadly(3)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="30f5-054b-9376-d7de" name="AP(X)" hidden="false" targetId="ea55-cc1c-f48e-89da" type="rule"/>
+                <infoLink id="69d5-d622-dbc7-8083" name="Deadly(X)" hidden="false" targetId="7cc5-4f66-8ace-337c" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="5.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
           <entryLinks>
             <entryLink id="b21f-d211-34cb-5b20" name="Plasma rifle" hidden="false" collective="false" import="true" targetId="625b-8506-b660-4191" type="selectionEntry">
@@ -780,6 +830,9 @@
               <infoLinks>
                 <infoLink id="8e83-9aac-0fc2-fce8" name="CCW (A2)" hidden="false" targetId="b26b-b660-8c89-04f7" type="profile"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="635d-0413-9d0b-e962" name="Blowtorch" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
@@ -865,6 +918,9 @@
               <infoLinks>
                 <infoLink id="acae-2c94-0e71-1375" name="CCW (A2)" hidden="false" targetId="b26b-b660-8c89-04f7" type="profile"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="fef4-2902-6eae-5c51" name="Cutlass" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
@@ -988,6 +1044,9 @@
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="ac32-4fa6-4410-16ea" name="Twin carbine and energy claw" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
@@ -1007,6 +1066,9 @@
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="2865-45af-2ba6-367a" name="2x Ultra sawblades" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntries>
@@ -1033,6 +1095,9 @@
                   </costs>
                 </selectionEntry>
               </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1104,6 +1169,11 @@
                 <cost name="pts" typeId="1549-06c1-4685-757e" value="15.0"/>
               </costs>
             </entryLink>
+            <entryLink id="207d-4122-eeef-5b35" name="Beast Mount" hidden="false" collective="false" import="true" targetId="d2ae-ada2-1f4b-d50c" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="5.0"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -1163,6 +1233,11 @@
                 <cost name="pts" typeId="1549-06c1-4685-757e" value="15.0"/>
               </costs>
             </entryLink>
+            <entryLink id="170e-d6a3-d882-85bd" name="Beast Mount" hidden="false" collective="false" import="true" targetId="d2ae-ada2-1f4b-d50c" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="5.0"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -1187,11 +1262,17 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="7369-f09c-36b4-03b2" name="Carbine" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="ab36-d23f-bcf9-8f82" name="Carbine" hidden="false" targetId="32f9-365f-f71b-1633" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="009e-b6d7-eda2-a96d" name="Twin Carbine" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1259,6 +1340,9 @@
       <infoLinks>
         <infoLink id="a769-5765-de74-a1e8" name="AP(X)" hidden="false" targetId="ea55-cc1c-f48e-89da" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="77a2-a5d7-12aa-55fa" name="Attack Beast" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1431,6 +1515,27 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d2ae-ada2-1f4b-d50c" name="Beast Mount" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="5aff-0060-d6dc-885b" name="Beast Mount" hidden="false" typeId="2c92-291a-eece-3203" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e3ae-f1ee-0a4c-a9ba">-</characteristic>
+            <characteristic name="Attacks" typeId="ce99-74fb-fca1-48df">3</characteristic>
+            <characteristic name="AP" typeId="0b3e-ea4d-51df-81f1">1</characteristic>
+            <characteristic name="Special Rules" typeId="6636-8baa-4920-3db5">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="b7cf-2da4-c2cd-4d70" name="AP(X)" hidden="false" targetId="ea55-cc1c-f48e-89da" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -1444,6 +1549,9 @@
           <infoLinks>
             <infoLink id="99e3-1c32-05f8-4616" name="CCW (A3)" hidden="false" targetId="f0c6-551e-dda5-d175" type="profile"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="92e2-9a28-e36b-2f11" name="Ultra drill" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
@@ -1618,6 +1726,31 @@
             <cost name="pts" typeId="1549-06c1-4685-757e" value="25.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="771b-0e11-e83a-b622" name="Beast Mount" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="40be-88df-47c0-6978" name="Beast Mount" hidden="false" typeId="d7f6-e47f-ca5e-9015" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Ability" typeId="b359-4631-7740-411e">Fast, Impact(1)</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="7bee-e98e-0903-7216" name="Beast Jaws" hidden="false" typeId="2c92-291a-eece-3203" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="e3ae-f1ee-0a4c-a9ba">-</characteristic>
+                <characteristic name="Attacks" typeId="ce99-74fb-fca1-48df">3</characteristic>
+                <characteristic name="AP" typeId="0b3e-ea4d-51df-81f1">1</characteristic>
+                <characteristic name="Special Rules" typeId="6636-8baa-4920-3db5">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="9d5e-168a-7cf7-6589" name="Fast" hidden="false" targetId="93fc-a941-15a1-314f" type="rule"/>
+            <infoLink id="b7c9-dfc8-7edf-a9ff" name="Impact(X)" hidden="false" targetId="0763-1d57-b1ec-5d9f" type="rule"/>
+            <infoLink id="bf82-6915-d700-9e1b" name="AP(X)" hidden="false" targetId="ea55-cc1c-f48e-89da" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="1549-06c1-4685-757e" value="20.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="d38e-2735-32e4-094a" name="Replace CCW:" hidden="false" collective="false" import="true" defaultSelectionEntryId="514b-f256-2246-6485">
@@ -1630,6 +1763,9 @@
           <infoLinks>
             <infoLink id="f458-a333-db4d-e0e0" name="CCW (A2)" hidden="false" targetId="b26b-b660-8c89-04f7" type="profile"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="8a00-62cc-0743-082b" name="Ultra drill" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
