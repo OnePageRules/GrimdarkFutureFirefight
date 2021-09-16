@@ -61,7 +61,7 @@ table!
 | Army | Version | Author|
 |---|---|---|
 |Game System|-|-|
-|Alien Hives|v2.11|Darguth|
+|Alien Hives|v2.11|Rincewind|
 |Battle Brothers|-|-|
 |Battle Sisters|-|-|
 |Custodian Brothers|-|-|
