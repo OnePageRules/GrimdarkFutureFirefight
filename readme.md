@@ -76,7 +76,7 @@ table!
 |Infected Colonies|-|-|
 |Machine Cult|-|-|
 |Machine Cult Defilers|-|-|
-|Orc Marauders|-|-|
+|Orc Marauders|v2.14|boogie666|
 |Ratmen Clans|-|-|
 |Rebel Guerrillas|-|-|
 |Robot Legions|-|-|
