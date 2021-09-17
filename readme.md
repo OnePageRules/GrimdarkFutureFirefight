@@ -70,7 +70,7 @@ table!
 |Elven Jesters|-|-|
 |Feudal Guard|-|-|
 |Havoc Brothers|-|-|
-|High Elf Fleets|-|-|
+|High Elf Fleets|v2.9|projape|
 |Human Defense Force|-|-|
 |Human Inquisition|-|-|
 |Infected Colonies|-|-|
