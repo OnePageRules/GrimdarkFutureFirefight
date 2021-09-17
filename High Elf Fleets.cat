@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5cd3-ad3d-e4e0-ac82" name="High Elf Fleets" revision="3" battleScribeVersion="2.03" authorName="Mad-Spy" authorContact="Discord: @Mad-Spy on OPR" library="false" gameSystemId="4503-fc13-8f5b-fe41" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5cd3-ad3d-e4e0-ac82" name="High Elf Fleets" revision="4" battleScribeVersion="2.03" authorName="Mad-Spy" authorContact="Discord: @Mad-Spy on OPR" library="false" gameSystemId="4503-fc13-8f5b-fe41" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="6e6d-650a-6a72-0997" name="GFF: High Elf Fleets v2.9" shortName="High Elf Fleets v2.9" publisher="Grim Dark Future: Firefight" publicationDate="2021-02-10" publisherUrl="https://onepagerules.com/portfolio/grimdark-future-firefight/"/>
   </publications>
@@ -56,11 +56,11 @@
             </selectionEntry>
             <selectionEntry id="6b08-bedc-a9a8-6ef6" name="CCW and shield" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
-                <infoLink id="25dd-b106-33c3-ab6e" name="CCW (A2)" hidden="false" targetId="16a8-9c4f-d0f8-3df7" type="profile"/>
+                <infoLink id="25dd-b106-33c3-ab6e" name="CCW (A2)" hidden="false" targetId="b441-dceb-1d9e-5584" type="profile"/>
                 <infoLink id="5ec3-c23c-7eb7-d4f3" name="Regeneration" hidden="false" targetId="2abf-b372-3762-e643" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="20.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -272,7 +272,7 @@
       <entryLinks>
         <entryLink id="02ba-3760-83a8-c21e" name="Jetbike" hidden="false" collective="false" import="true" targetId="ec31-b2db-8510-c0ef" type="selectionEntry">
           <costs>
-            <cost name="pts" typeId="1549-06c1-4685-757e" value="25.0"/>
+            <cost name="pts" typeId="1549-06c1-4685-757e" value="20.0"/>
           </costs>
         </entryLink>
       </entryLinks>
@@ -594,7 +594,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50b2-aee0-fb72-4307" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="e695-aa32-a8b9-e9f0" name="Two shard carbines and CCW" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="e695-aa32-a8b9-e9f0" name="Twin shard carbine and CCW" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntries>
                 <selectionEntry id="4d37-77ab-0e1e-dbc7" name="CCW" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
@@ -704,7 +704,7 @@
                 <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="b750-677d-bb93-6323" name="Pistol, CCW and shield" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="b750-677d-bb93-6323" name="Shard pistol, CCW and shield" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
                 <infoLink id="6279-d9b6-267e-3087" name="Regeneration" hidden="false" targetId="2abf-b372-3762-e643" type="rule"/>
               </infoLinks>
@@ -861,11 +861,15 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="e6e9-6662-1400-a443" name="Two mirror swords" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7325-aee2-2716-3120" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67f3-9068-7b17-568a" type="min"/>
+              </constraints>
               <profiles>
                 <profile id="b6a2-ee02-c19c-bafb" name="Two mirror swords" hidden="false" typeId="2c92-291a-eece-3203" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e3ae-f1ee-0a4c-a9ba">Melee</characteristic>
-                    <characteristic name="Attacks" typeId="ce99-74fb-fca1-48df">3</characteristic>
+                    <characteristic name="Attacks" typeId="ce99-74fb-fca1-48df">6</characteristic>
                     <characteristic name="AP" typeId="0b3e-ea4d-51df-81f1">-</characteristic>
                     <characteristic name="Special Rules" typeId="6636-8baa-4920-3db5">-</characteristic>
                   </characteristics>
@@ -1304,7 +1308,7 @@
                 <profile id="eadf-7d5a-3f8c-cced" name="Two spider blades" hidden="false" typeId="2c92-291a-eece-3203" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="e3ae-f1ee-0a4c-a9ba">Melee</characteristic>
-                    <characteristic name="Attacks" typeId="ce99-74fb-fca1-48df">1</characteristic>
+                    <characteristic name="Attacks" typeId="ce99-74fb-fca1-48df">2</characteristic>
                     <characteristic name="AP" typeId="0b3e-ea4d-51df-81f1">2</characteristic>
                     <characteristic name="Special Rules" typeId="6636-8baa-4920-3db5">-</characteristic>
                   </characteristics>
@@ -1557,7 +1561,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="1549-06c1-4685-757e" value="105.0"/>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="80.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2b26-efb8-054a-4209" name="Jetbike" hidden="false" collective="false" import="true" type="model">
@@ -1614,8 +1618,16 @@
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink id="c9c3-04c7-c49b-ec20" name="Shard cannon" hidden="false" collective="false" import="true" targetId="ad12-cd38-af9a-eae3" type="selectionEntry"/>
-            <entryLink id="1b20-6b32-b833-5703" name="Twin shardgun" hidden="false" collective="false" import="true" targetId="a24e-b24a-86ea-9f67" type="selectionEntry"/>
+            <entryLink id="c9c3-04c7-c49b-ec20" name="Shard cannon" hidden="false" collective="false" import="true" targetId="ad12-cd38-af9a-eae3" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="1b20-6b32-b833-5703" name="Twin shardgun" hidden="false" collective="false" import="true" targetId="a24e-b24a-86ea-9f67" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="5.0"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -1818,7 +1830,7 @@
       <profiles>
         <profile id="4a91-0ddb-9452-30e9" name="Twin shardgun" hidden="false" typeId="2c92-291a-eece-3203" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="e3ae-f1ee-0a4c-a9ba">24&quot;</characteristic>
+            <characteristic name="Range" typeId="e3ae-f1ee-0a4c-a9ba">12&quot;</characteristic>
             <characteristic name="Attacks" typeId="ce99-74fb-fca1-48df">4</characteristic>
             <characteristic name="AP" typeId="0b3e-ea4d-51df-81f1">-</characteristic>
             <characteristic name="Special Rules" typeId="6636-8baa-4920-3db5">Rending</characteristic>
