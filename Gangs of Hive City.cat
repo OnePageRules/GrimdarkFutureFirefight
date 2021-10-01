@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5163-4952-f70a-10bf" name="Gangs of Hive City" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="4503-fc13-8f5b-fe41" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5163-4952-f70a-10bf" name="Gangs of Hive City" revision="2.5" battleScribeVersion="2.03" library="false" gameSystemId="4503-fc13-8f5b-fe41" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="c4ba-69f8-ea91-67b6" name="Script-Keeper" hidden="false" collective="false" import="true" type="model">
       <modifiers>
